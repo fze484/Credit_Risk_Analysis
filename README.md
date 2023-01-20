@@ -59,7 +59,7 @@ The overall precision, recall, and f1-score for the classifier are 0.97, 0.97, a
 ![Test](/Resources/ada.png)
 
 ## Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
-The EasyEnsembleClassifier model performed the best among the six models evaluated, with a 97% accuracy rate and a 8% precision rate when identifying "High Risk" candidates. It also had the highest sensitivity or recall rate at 97%  and an F1 score of 98%. Therefore, it is recommended for this type of analysis. The other models ranked in descending order based on "High Risk" results are: BalancedRandomForestClassifier, SMOTE, SMOTEENN, RandomOverSampler, and ClusterCentroids. It is important to note that the original dataset had 99% of the applications classified as "Low Risk" with only 1% of the data classified as "High Risk" which may skew the results and not be acceptable for banks.
+The Random Forest model performed the best among the six models evaluated, with a 97% accuracy rate and a 9% precision rate when identifying "High Risk" candidates. It also had the highest sensitivity or recall rate at 97%  and an F1 score of 98%. Therefore, it is recommended for this type of analysis. The other models ranked in descending order based on "High Risk" results are: BalancedRandomForestClassifier, SMOTE, SMOTEENN, RandomOverSampler, and ClusterCentroids. It is important to note that the original dataset had 99% of the applications classified as "Low Risk" with only 1% of the data classified as "High Risk" which may skew the results and not be acceptable for banks.
 
 
 
