@@ -1,7 +1,7 @@
 # Credit_Risk_Analysis
 
 ## Overview of the analysis: 
-This is a machine learning project involving credit card risk. The challenge of credit risk is that there are often many more good loans than risky loans, making it an unbalanced classification problem. The goal of the of the project is to use resampling techniques and machine learning models to predict credit risk. Using the imbalanced-learn and scikit-learn libraries, I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. I also used a combination of over- and undersampling using the SMOTEENN algorithm. Additionally, I compared two machine learning models that reduce bias, the BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
+This is a machine learning project involving evaluating credit card risk. The challenge of credit risk is that there are often many more good loans than risky loans, making it an unbalanced classification problem. The goal of the of the project is to use resampling techniques and machine learning models to predict credit risk. Using the imbalanced-learn and scikit-learn libraries, I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. I also used a combination of over- and undersampling using the SMOTEENN algorithm. Additionally, I compared two machine learning models that reduce bias, the BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk. 
 
 ## Results: 
 
@@ -11,6 +11,8 @@ In this case, class "1" has a precision of 1.00, meaning that all of the instanc
 On the other hand, class "0" has a much lower precision of 0.01, meaning that only 1% of the instances predicted as class "0" were actually class "0". Its recall is 0.64, meaning that it correctly predicted 64% of all actual class "0" instances. Its specificity is 0.62, meaning that it correctly predicted 62% of all actual class "1" instances. The f1-score for class "0" is 0.02, indicating a very low level of precision and recall.
 
 The overall precision, recall, and f1-score for the classifier are 0.62, 0.62, and 0.76 respectively. The model is not performing well on either class, it is struggling in identifying class 0 and not able to correctly identify class 1. It is likely that the model needs to be retrained or improved to better handle imbalanced data.
+
+![Test](/Resources/naive.png)
 
 ### SMOTE Oversampling
 In this case, class "1" has a precision of 1.00, meaning that all of the instances predicted as class "1" were actually class "1". Its recall is 0.66, meaning that it correctly predicted 66% of all actual class "1" instances. Its specificity is 0.63, meaning that it correctly predicted 63% of all actual class "0" instances. The f1-score for class "1" is 0.80, indicating a relatively high level of precision and recall.
